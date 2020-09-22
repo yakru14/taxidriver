@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxiDriver</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+  </head>
+  <body>
+    <div class="text-center">
+      <p class="logo">
+        <i class="fas fa-taxi"></i>
+        Междугороднее такси</p> 
+        <button id="btn" class="buttonone">☰</button>
+
+        <nav id="nav">
+          <ul>
+            <li><a href="#">+7 (000) 123-45-76</a></li>
+            <li><a href="t.me/TaxiDriver_MESSAGE_bot" method="POST">Telegram</a></li>
+            <li><a href="#">WhatsApp</a></li>
+          </ul>
+        </nav>
+    </div>
+    
+     
+    <div class="container">
+      <div class="header"> 
+        <h2>Заказать поездку</h2>
+      </div>
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="username">Имя</label>
+          <input type="text" placeholder="Введите ваше имя" id="username">
+          <i class="fas fa-check-circle"></i>
+			    <i class="fas fa-exclamation-circle"></i>
+          <small>Ошибка</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Телефон</label>
+          <input type="phone" placeholder="+7 (900) 000-00-00" id="phone" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Ошибка</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Откуда</label>
+          <input type="cityone" placeholder="Санкт-Петербург" id="cityone" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Ошибка</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Куда</label>
+          <input type="citytwo" placeholder="Псков" id="citytwo" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Ошибка</small>
+        </div>
+        <div class="form-control">
+            <label for="username">Дата</label>
+            <input type="date" id="date" />
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Ошибка</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Время</label>
+          <input type="time" id="time" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Ошибка</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Количество человек</label>
+          <input type="people" placeholder="1" id="people" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Ошибка</small>
+        </div>
+        <button class="buttontwo" type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <div class="container2">
+      <div class="header">
+        <h2>Тарифы из Санкт-Петербурга</h2>
+      </div>
+      <table>
+        <tr>
+          <td class = "heading">Город</td>
+          <td class = "heading">Цена(руб.)</td>
+        </tr>
+        <tr>
+          <td>Псков</td>
+          <td>1500 руб.</td>
+        </tr>
+        <tr>
+          <td>Вологда</td>
+          <td>2500 руб.</td>
+        </tr>
+        <tr>
+          <td>Тверь</td>
+          <td>3000 руб.</td>
+        </tr>
+        <tr>
+          <td>Москва</td>
+          <td>4000 руб.</td>
+        </tr>
+        <tr>
+          <td>Тула</td>
+          <td>4500 руб.</td>
+        </tr>
+        <tr>
+          <td>Кострома</td>
+          <td>5000 руб.</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
