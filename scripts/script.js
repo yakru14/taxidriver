@@ -23,12 +23,12 @@ form.addEventListener('submit', e => {
 
 function checkInputs() {
     const usernameValue = username.value.trim();
-    const phoneValue = username.value.trim();
-    const cityoneValue = username.value.trim();
-    const citytwoValue = username.value.trim();
-    const dateValue = username.value.trim();
-    const timeValue = username.value.trim();
-    const peopleValue = username.value.trim();
+    const phoneValue = phone.value.trim();
+    const cityoneValue = cityone.value.trim();
+    const citytwoValue = citytwo.value.trim();
+    const dateValue = date.value.trim();
+    const timeValue = time.value.trim();
+    const peopleValue = people.value.trim();
 
     if(usernameValue === '') {
 		setErrorFor(username, 'Имя не заполнено');
@@ -38,9 +38,9 @@ function checkInputs() {
     
     if(phoneValue === '') {
 		setErrorFor(phone, 'Телефон не заполнен');
-	} /*else if (!isPhone(phoneValue)) {
+	} else if (!isPhone(phoneValue)) {
 		setErrorFor(phone, 'Неверно набран номер телефона');
-	}*/ else {
+	} else {
 		setSuccessFor(phone);
     }
 
